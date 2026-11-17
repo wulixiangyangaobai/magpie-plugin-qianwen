@@ -1,1 +1,62 @@
-IyAvLy8gc2NyaXB0CiMgcmVxdWlyZXMtcHl0aG9uID0gIj49My4xMSIKIyBkZXBlbmRlbmNpZXMgPSBbImJyb3dzZXItY29va2llMz09MC4yMC4xIl0KIyAvLy8KIiIi6K+75Y+W5Y2D6ZeuIEFwcCAoUWlhbndlbi5hcHAgLyBjb20uYWxpYmFiYS50b25neWkpIOahjOmdoueZu+W9leaAgeOAggoK6L6T5Ye6IEpTT04g5YiwIHN0ZG91dO+8jOS7heS+m+eItui/m+eoi+ivu+WPlu+8m+S4jeiusOW9leS7u+S9leWHreaNruWAvOOAggoiIiIKaW1wb3J0IGpzb24KaW1wb3J0IG9zCmltcG9ydCBwbGlzdGxpYgppbXBvcnQgcmUKaW1wb3J0IHN1YnByb2Nlc3MKaW1wb3J0IHN5cwpmcm9tIHBhdGhsaWIgaW1wb3J0IFBhdGgKCmlmIHN5cy5wbGF0Zm9ybSAhPSAiZGFyd2luIjoKICAgIHJhaXNlIFJ1bnRpbWVFcnJvcigi5Y2D6Zeu5qGM6Z2i55m75b2V5a+85YWl55uu5YmN5LuF5pSv5oyBIG1hY09T77yb6ZyA6KaB5a6J6KOF5bm255m75b2V5Y2D6ZeuIEFwcOOAgiIpCgpyb290ID0gUGF0aC5ob21lKCkgLyAiTGlicmFyeS9BcHBsaWNhdGlvbiBTdXBwb3J0L1FpYW53ZW4iCnByb2ZpbGUgPSAiRGVmYXVsdCIKY29va2llX2ZpbGUgPSByb290IC8gcHJvZmlsZSAvICJDb29raWVzIgppZiBub3QgY29va2llX2ZpbGUuaXNfZmlsZSgpOgogICAgcmFpc2UgRmlsZU5vdEZvdW5kRXJyb3IoIuWNg+mXriBBcHAg6YWN572u5Lit5rKh5pyJIENvb2tpZXMg5paH5Lu277yM6K+35YWI5omT5byA5a6i5oi356uv5bm255m75b2V44CCIikKCiMg5o+Q5YmN5o6i5rWL6ZKl5YyZ5Liy6aG555uu77yM6YG/5YWN6Kej5a+G5bqT5Zyo5Yet5o2u57y65aSx5pe255So6buY6K6k5a+G56CB44CCCnNlcnZpY2UgPSAiUWlhbndlbiBTYWZlIFN0b3JhZ2UiCnVzZXIgPSAiUWlhbndlbiIKcHJvYmUgPSBzdWJwcm9jZXNzLnJ1bigKICAgIFsiL3Vzci9iaW4vc2VjdXJpdHkiLCAiLXEiLCAiZmluZC1nZW5lcmljLXBhc3N3b3JkIiwgIi1hIiwgdXNlciwgIi1zIiwgc2VydmljZV0sCiAgICBjYXB0dXJlX291dHB1dD1UcnVlLCB0aW1lb3V0PTIwLAopCmlmIHByb2JlLnJldHVybmNvZGUgIT0gMDoKICAgIHJhaXNlIFJ1bnRpbWVFcnJvcigi6ZKl5YyZ5Liy5Lit5om+5LiN5YiwIFFpYW53ZW4gU2FmZSBTdG9yYWdlIOmhueebru+8jOivt+ehruiupOWNg+mXriBBcHAg5bey55m75b2V44CCIikKa2V5ID0gc3VicHJvY2Vzcy5ydW4oCiAgICBbIi91c3IvYmluL3NlY3VyaXR5IiwgIi1xIiwgImZpbmQtZ2VuZXJpYy1wYXNzd29yZCIsICItdyIsICItYSIsIHVzZXIsICItcyIsIHNlcnZpY2VdLAogICAgY2FwdHVyZV9vdXRwdXQ9VHJ1ZSwgY2hlY2s9VHJ1ZSwgdGltZW91dD0yMCwKKQppZiBub3Qga2V5LnN0ZG91dC5zdHJpcCgpOgogICAgcmFpc2UgUnVudGltZUVycm9yKCJRaWFud2VuIFNhZmUgU3RvcmFnZSDmsqHmnInlj6/nlKjlr4bnoIHjgIIiKQpkZWwga2V5CgppbXBvcnQgYnJvd3Nlcl9jb29raWUzCmphciA9IGJyb3dzZXJfY29va2llMy5DaHJvbWl1bUJhc2VkKAogICAgYnJvd3Nlcj0iUWlhbndlbiIsIGNvb2tpZV9maWxlPXN0cihjb29raWVfZmlsZSksIGRvbWFpbl9uYW1lPSJxaWFud2VuLmNvbSIsCiAgICBvc3hfa2V5X3NlcnZpY2U9c2VydmljZSwgb3N4X2tleV91c2VyPXVzZXIsCikubG9hZCgpCmNvb2tpZXMgPSBbCiAgICB7Im5hbWUiOiBjLm5hbWUsICJ2YWx1ZSI6IGMudmFsdWUsICJkb21haW4iOiBjLmRvbWFpbi5sc3RyaXAoIi4iKSwgInBhdGgiOiBjLnBhdGgsCiAgICAgInNlY3VyZSI6IGMuc2VjdXJlLCAiZXhwaXJlcyI6IGMuZXhwaXJlc30KICAgIGZvciBjIGluIGphciBpZiBjLmRvbWFpbi5sc3RyaXAoIi4iKSA9PSAicWlhbndlbi5jb20iIG9yIGMuZG9tYWluLmVuZHN3aXRoKCIucWlhbndlbi5jb20iKQpdCmlmIG5vdCBhbnkoY1sibmFtZSJdID09ICJ0b25neWlfc3NvX3RpY2tldCIgYW5kIGNbInZhbHVlIl0gZm9yIGMgaW4gY29va2llcyk6CiAgICByYWlzZSBSdW50aW1lRXJyb3IoIuWNg+mXriBBcHAg5b2T5YmN6YWN572u5rKh5pyJ55m75b2V5Lya6K+d77yM6K+35Zyo5a6i5oi356uv55m75b2V5ZCO6YeN6K+V44CCIikKCmNsaWVudF92ZXJzaW9uID0gIiIKYXBwX2luZm8gPSBQYXRoKCIvQXBwbGljYXRpb25zL1FpYW53ZW4uYXBwL0NvbnRlbnRzL0luZm8ucGxpc3QiKQppZiBhcHBfaW5mby5pc19maWxlKCk6CiAgICB3aXRoIGFwcF9pbmZvLm9wZW4oInJiIikgYXMgZjoKICAgICAgICBjbGllbnRfdmVyc2lvbiA9IHBsaXN0bGliLmxvYWQoZikuZ2V0KCJDRkJ1bmRsZVNob3J0VmVyc2lvblN0cmluZyIsICIiKQoKcHJpbnQoanNvbi5kdW1wcyh7InByb2ZpbGUiOiBwcm9maWxlLCAiY29va2llcyI6IGNvb2tpZXMsICJjbGllbnRWZXJzaW9uIjogY2xpZW50X3ZlcnNpb259KSkK
+# /// script
+# requires-python = ">=3.11"
+# dependencies = ["browser-cookie3==0.20.1"]
+# ///
+"""读取千问 App (Qianwen.app / com.alibaba.tongyi) 桌面登录态。
+
+输出 JSON 到 stdout，仅供父进程读取；不记录任何凭据值。
+"""
+import json
+import os
+import plistlib
+import re
+import subprocess
+import sys
+from pathlib import Path
+
+if sys.platform != "darwin":
+    raise RuntimeError("千问桌面登录导入目前仅支持 macOS；需要安装并登录千问 App。")
+
+root = Path.home() / "Library/Application Support/Qianwen"
+profile = "Default"
+cookie_file = root / profile / "Cookies"
+if not cookie_file.is_file():
+    raise FileNotFoundError("千问 App 配置中没有 Cookies 文件，请先打开客户端并登录。")
+
+# 提前探测钥匙串项目，避免解密库在凭据缺失时用默认密码。
+service = "Qianwen Safe Storage"
+user = "Qianwen"
+probe = subprocess.run(
+    ["/usr/bin/security", "-q", "find-generic-password", "-a", user, "-s", service],
+    capture_output=True, timeout=20,
+)
+if probe.returncode != 0:
+    raise RuntimeError("钥匙串中找不到 Qianwen Safe Storage 项目，请确认千问 App 已登录。")
+key = subprocess.run(
+    ["/usr/bin/security", "-q", "find-generic-password", "-w", "-a", user, "-s", service],
+    capture_output=True, check=True, timeout=20,
+)
+if not key.stdout.strip():
+    raise RuntimeError("Qianwen Safe Storage 没有可用密码。")
+del key
+
+import browser_cookie3
+jar = browser_cookie3.ChromiumBased(
+    browser="Qianwen", cookie_file=str(cookie_file), domain_name="qianwen.com",
+    osx_key_service=service, osx_key_user=user,
+).load()
+cookies = [
+    {"name": c.name, "value": c.value, "domain": c.domain.lstrip("."), "path": c.path,
+     "secure": c.secure, "expires": c.expires}
+    for c in jar if c.domain.lstrip(".") == "qianwen.com" or c.domain.endswith(".qianwen.com")
+]
+if not any(c["name"] == "tongyi_sso_ticket" and c["value"] for c in cookies):
+    raise RuntimeError("千问 App 当前配置没有登录会话，请在客户端登录后重试。")
+
+client_version = ""
+app_info = Path("/Applications/Qianwen.app/Contents/Info.plist")
+if app_info.is_file():
+    with app_info.open("rb") as f:
+        client_version = plistlib.load(f).get("CFBundleShortVersionString", "")
+
+print(json.dumps({"profile": profile, "cookies": cookies, "clientVersion": client_version}))
