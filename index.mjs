@@ -8,6 +8,23 @@ const API = "https://chat2.qianwen.com";
 
 const icon = ""; // 可选：provider 图标（留空则 magpie 用默认）
 
+// 从 CC 注入了 system-reminder / command-message 的 user 消息里提取真实用户输入。
+// 典型结构：<system-reminder>...</system-reminder>\n\n<真实输入>\n\n<command-message>...
+function extractRealUserText(raw) {
+  if (typeof raw !== "string" || !raw.trim()) return raw;
+  let s = raw;
+  // 1) 若以 <system-reminder> 包裹，取最后一个 </system-reminder> 之后的内容
+  const lastReminder = s.lastIndexOf("</system-reminder>");
+  if (lastReminder >= 0 && s.indexOf("<system-reminder>") === 0) {
+    s = s.slice(lastReminder + "</system-reminder>".length);
+  }
+  // 2) 去掉紧随其后的 command-message / command-name / skill-format 等 CC 元数据块
+  const cmdIdx = s.search(/<command-message\b|<command-name\b|<skill-format\b|<system-reminder\b/);
+  if (cmdIdx > 0) s = s.slice(0, cmdIdx);
+  s = s.trim();
+  return s || raw.trim(); // 剥离后为空则回退原文，避免误伤
+}
+
 function readAuth(auth) {
   if (auth?.type !== "api") {
     const e = new Error("请先导入千问桌面登录账号（magpie plugin login qianwen）。");
@@ -101,6 +118,9 @@ export const QianwenPlugin = async ({ client } = {}) => {
       for (let i = msgs.length - 1; i >= 0; i--) {
         if (msgs[i].role === "user" && msgs[i].content) { text = msgs[i].content; break; }
       }
+      // CC 会把 CLAUDE.md/system-reminder/skill 文档拼进 user 消息。
+      // 千问只需真实输入，剥掉这些包裹，避免被判成「工作流意图」而空回复。
+      text = extractRealUserText(text);
       if (!text) return json({ error: { message: "no user message" } }, 400);
       const model = body.model || "Qwen";
       // 风控是按 cookie/IP 维度的，重试只会加重；只做一次短暂退避后重试，

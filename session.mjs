@@ -143,7 +143,7 @@ export class QianwenSession {
     };
     const resp = await fetch(`${REGISTER}?chid=${chid}`, {
       method: "POST", headers, body: JSON.stringify(body),
-      signal: AbortSignal.timeout(30000),
+      signal: AbortSignal.timeout(30000), proxy: false, // 千问国内站点直连，绕开代理对大请求的 ECONNRESET
     });
     if (!resp.ok) throw new Error(`Baxia 注册 HTTP ${resp.status}`);
     const data = await resp.json();
@@ -206,7 +206,7 @@ export class QianwenSession {
     };
     const fetchJson = async (url) => {
       const resp = await fetch(`${url}?${p.toString()}`, {
-        headers, signal: signal || AbortSignal.timeout(20000),
+        headers, signal: signal || AbortSignal.timeout(20000), proxy: false,
       });
       if (!resp.ok) return null;
       try { return await resp.json(); } catch { return null; }
@@ -284,7 +284,7 @@ export class QianwenSession {
       };
       const resp = await fetch(`${CHAT}?${urlParams}`, {
         method: "POST", headers, body: bodyStr,
-        signal: signal || AbortSignal.timeout(120000),
+        signal: signal || AbortSignal.timeout(120000), proxy: false, // 直连，避免大 body 经代理被重置
       });
       const out = await resp.text();
       // 风控拦截（验证码/限流）：识别后给出明确提示，由上层决定是否退避重试
@@ -305,7 +305,8 @@ export class QianwenSession {
         if (!s || s === "true" || s === "[DONE]") continue;
         try {
           const j = JSON.parse(s);
-          if (j?.error_msg && j.error_msg !== "ok" && j.error_msg !== "") {
+          // 千问的成功信号可能是 ok / success / 空，均非错误；只拦截真正的失败码
+          if (j?.error_msg && !["ok", "success"].includes(String(j.error_msg).toLowerCase())) {
             throw new Error(`千问返回错误：${j.error_msg}`);
           }
           const msgs = j?.data?.messages || j?.messages || [];
