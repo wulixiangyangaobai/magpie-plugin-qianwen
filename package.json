@@ -1,6 +1,6 @@
 {
   "name": "magpie-plugin-qianwen",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "千问 App (com.alibaba.tongyi) 订阅接入 magpie / OpenCode，桌面登录态 + 纯 HTTP 复现 Baxia 签名，无浏览器依赖",
   "main": "index.mjs",
